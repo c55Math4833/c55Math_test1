@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Vue 測試2.0</title><!--標題-->
+  <title>Vue 測試3.0</title><!--標題-->
   <script src="https://cdn.jsdelivr.net/npm/vue"></script> <!--安裝Vue框架-->
   <meta charset="utf-8"><!--指定為utf-8編碼-->
   <meta name="author" content="c55Math"><!--作者-->
@@ -18,12 +18,22 @@
     var app = new Vue({
       el: '#app',
       data: {
-        message: 'Vue 測試2.0'
+        message: 'Vue 測試3.0'
       }
     })
   </script><!--建立腳本add-->
-
-
-
+<form oninput="result.value=parseInt(a.value)*parseInt(b.value)+parseInt(c.value)*parseInt(d.value)">
+  <form oninput="result.value=parseInt(c.value)*parseInt(d.value)">
+    <input type="text" id="c"" name="c" placeholder="請輸入電功率(瓩)" nfocus="this.placeholder=''"  /> 
+    <input type="text" id="d" name="d" placeholder="請輸入時間(小時)" nfocus="this.placeholder=''"  /> 
+    <output type="text" name="result" for="c d"></output>
+  </form>
+  <form oninput="result.value=parseInt(a.value)*parseInt(b.value)">
+    <input type="text" id="b" name="b" placeholder="請輸入電功率(瓩)" nfocus="this.placeholder=''"  /> 
+    <input type="text" id="a" name="a" placeholder="請輸入時間(小時)" nfocus="this.placeholder=''"  /> 
+    <output type="text" name="result" for="a b"></output>
+  </form>
+  <output type="text" name="result" for="c d"></output>
+</form>
 </body>
 </html>
