@@ -1,0 +1,35 @@
+@charset "utf-8";
+.head1 {
+    font-family: "cwTeX Q FangsongZH";
+    font-size: 20px;
+    background-color: #76A609;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    text-align: center;
+}
+#Menu {
+    background-color: #577E00;
+    float: none;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+#Menu a:hover{
+    background-color: rgba(56,81,0,1.00);
+    color: white;
+	}
+#Messages {
+    background-color: #283A00;
+    float: none;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    overflow: hidden;
+    height: 30px;
+    position: relative;
+}
